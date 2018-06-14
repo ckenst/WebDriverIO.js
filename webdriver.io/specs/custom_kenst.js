@@ -8,12 +8,13 @@ browser.addCommand("getUrlAndTitle", function () {
     };
 });
 
-describe('About kenst.com', function() {
+describe('Kenst.com', function() {
   it('should use my custom command', function () {
-      browser.url('http://www.kenst.com/about');
+      browser.url('http://www.kenst.com/');
       var result = browser.getUrlAndTitle();
+      console.log(result)
 
-      assert.strictEqual(result.url, 'https://www.kenst.com/about/');
-      assert.strictEqual(result.title, 'About – Chris Kenst');
+      assert.equal(result.url, 'https://www.kenst.com/');
+      assert.strictEqual(result.title, 'Chris Kenst');
   });
 });
