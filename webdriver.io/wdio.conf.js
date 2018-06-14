@@ -1,6 +1,16 @@
 exports.config = {
 
     //
+    // =================
+    // Service Providers
+    // =================
+    // WebdriverIO supports Sauce Labs, Browserstack, and Testing Bot (other cloud providers
+    // should work too though). These services define specific user and key (or access key)
+    // values you need to put in here in order to connect to these services.
+    //
+    // user: 'bloomnation1',
+    // key: 'k3JzfsySJZ4BB7GzMjmy',
+    //
     // ==================
     // Specify Test Files
     // ==================
@@ -44,7 +54,10 @@ exports.config = {
         // 5 instances get started at a time.
         maxInstances: 5,
         //
-        browserName: 'chrome'
+        browserName: 'chrome',
+        // browserVersion: '67.0',
+        // os: 'Windows',
+        // os_version: '10'
     }],
     //
     // ===================
@@ -77,7 +90,7 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'http://localhost',
+    baseUrl: 'http://www.kenst.com',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
@@ -111,8 +124,7 @@ exports.config = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    // services: ['browserstack','visual-regression','docker'],
-    //
+    // services: [],//
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
     // see also: http://webdriver.io/guide/testrunner/frameworks.html
@@ -124,7 +136,8 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: http://webdriver.io/guide/reporters/dot.html
-    // reporters: ['dot'],
+    reporters: ['dot'],
+
     //
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
