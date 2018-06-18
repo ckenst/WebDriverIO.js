@@ -2,4 +2,3 @@
 *.lock
 .DS_Store
 node_modules
-wdio.conf.js

@@ -27,7 +27,7 @@ exports.config = {
         './specs/kenst/custom.spec/js'
       ],
       old: [
-        './specs/old_examples/*.js'
+        './specs/old/*.js'
       ]
     },
     // Patterns to exclude.
