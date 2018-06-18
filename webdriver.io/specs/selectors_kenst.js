@@ -20,4 +20,6 @@ describe('About kenst.com', function() {
         var title = browser.getTagName('.entry-title')
         assert.equal(title, 'h1')
     });
+
+    it('should be a pending test');
 });
