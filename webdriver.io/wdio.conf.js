@@ -22,6 +22,16 @@ exports.config = {
     specs: [
         './specs/*.js'
     ],
+
+    suites: {
+      kenst: [
+        './specs/kenst/about.spec.js',
+        './specs/kenst/custom.spec/js'
+      ],
+      old: [
+        './specs/old_examples/*.js'
+      ]
+    },
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
@@ -90,10 +100,10 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'http://www.kenst.com',
+    baseUrl: '',
     //
     // Default timeout for all waitFor* commands.
-    waitforTimeout: 10000,
+    waitforTimeout: 15000,
     //
     // Default timeout in milliseconds for request
     // if Selenium Grid doesn't send response
