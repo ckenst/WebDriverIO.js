@@ -1,3 +1,5 @@
+//Base page Object
+
 function Page () {
 }
 
