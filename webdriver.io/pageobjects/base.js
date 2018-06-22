@@ -1,4 +1,4 @@
-//Base page Object
+// Basepage object
 
 function Page () {
 }
