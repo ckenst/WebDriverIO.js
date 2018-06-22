@@ -1,3 +1,4 @@
+var HomePage  = require('../../pageobjects/kenst.com.page');
 var assert = require('assert');
 
 // custom commands
@@ -10,7 +11,7 @@ browser.addCommand("getUrlAndTitle", function () {
 
 describe('Kenst.com', function() {
   it('should use my custom command', function () {
-      browser.url('http://www.kenst.com/');
+      HomePage.open();
       var result = browser.getUrlAndTitle();
       console.log(result)
 

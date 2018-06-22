@@ -1,10 +1,12 @@
-var assert = require('assert');
+var AboutPage = require('../../pageobjects/kenst.about.page');
+var HomePage  = require('../../pageobjects/kenst.com.page');
+var assert    = require('assert');
 
 describe('About kenst.com', function() {
     // Example using getTitle
     it('should have the right title', function() {
-        browser.url('https://www.kenst.com/');
-        browser.click('#menu-item-1234')
+        HomePage.open();
+        HomePage.navAbout.click();
         var title = browser.getTitle();
         assert.equal(title, 'About – Chris Kenst');
     });
@@ -16,10 +18,11 @@ describe('About kenst.com', function() {
     });
     // Example using getTagName
     it('title should be an h1', function()  {
-        browser.url('https://www.kenst.com/about')
+        AboutPage.open();
         var title = browser.getTagName('.entry-title')
         assert.equal(title, 'h1')
     });
 
+    // Example of a pending test
     it('should be a pending test');
 });
