@@ -24,7 +24,8 @@ exports.config = {
     suites: {
       kenst: [
         './specs/kenst/about.spec.js',
-        './specs/kenst/custom.spec/js'
+        './specs/kenst/custom.spec.js',
+        './specs/kenst/setting.cookie.spec.js',
       ],
       old: [
         './specs/old/*.js'
@@ -79,7 +80,7 @@ exports.config = {
     sync: true,
     //
     // Level of logging verbosity: silent | verbose | command | data | result | error
-    logLevel: 'verbose',
+    logLevel: 'silent',
     //
     // Enables colors for log output.
     coloredLogs: true,
@@ -98,7 +99,7 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: '',
+    baseUrl: 'https://www.kenst.com/',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 15000,
