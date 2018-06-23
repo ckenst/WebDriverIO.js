@@ -6,7 +6,7 @@ describe('login form', function() {
     LoginPage.open();
     LoginPage.username.setValue('foo');
     LoginPage.password.setValue('bar');
-    LoginPage.submit();
+    LoginPage.submit(); // this should be a click event
 
     expect(LoginPage.flash.getText()).to.contain('Your username is invalid!');
   });
@@ -15,7 +15,7 @@ describe('login form', function() {
     LoginPage.open();
     LoginPage.username.setValue('tomsmith');
     LoginPage.password.setValue('SuperSecretPassword!');
-    LoginPage.submit();
+    LoginPage.submit(); // this should be a click event
 
     expect(LoginPage.flash.getText()).to.contain('You logged into a secure area!');
   });
