@@ -1,11 +1,8 @@
 var HomePage = require('../../pageobjects/kenst.com.page');
 
 describe('Kenst.com', function() {
-    it('sets a cookie', function() {
+    it('lets set a cookie set', function() {
       HomePage.open();
-      browser.setCookie({name: 'auth', value: 'somerandomhash'});
-
-      var cookies = browser.getCookie();
-      console.log(cookies);
+      HomePage.setAndGetCookie();
     });
 });

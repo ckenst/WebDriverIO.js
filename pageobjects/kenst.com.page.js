@@ -1,8 +1,7 @@
-var Page          = require('./base')
+var Page          = require('./base');
 var assert        = require('assert');
-var kenstHomePage = Object.create(Page, {
 
-  // define elements
+var kenstHomePage = Object.create(Page, {
 
   navResources: { get: function() { return $('#menu-item-2138'); } },
   navAbout:     { get: function() { return $('#menu-item-1234'); } },
@@ -26,6 +25,14 @@ var kenstHomePage = Object.create(Page, {
     let result = browser.getUrlAndTitle();
     assert.equal(result.url, 'https://www.kenst.com/');
     assert.strictEqual(result.title, 'Chris Kenst');
+  } },
+
+  setAndGetCookie: { value: function() {
+    browser.setCookie({name: 'auth', value: 'somerandomhash'});
+
+    let cookies = browser.getCookie();
+    console.log('Cookies set are:');
+    console.log(cookies);
   } },
 
 });

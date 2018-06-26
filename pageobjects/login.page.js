@@ -1,4 +1,4 @@
-var Page = require('./base')
+var Page = require('./base');
 
 var LoginPage = Object.create(Page, {
 
