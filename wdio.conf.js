@@ -167,7 +167,7 @@ exports.config = {
      * @param {Array.<Object>} capabilities list of capabilities details
      */
     onPrepare: function() {
-      console.log("Starting tests");
+      console.log("Starting acceptance tests");
     },
     /**
      * Gets executed just before initialising the webdriver session and test framework. It allows you
