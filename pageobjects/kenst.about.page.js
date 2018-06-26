@@ -9,17 +9,24 @@ var kenstAboutPage = Object.create(Page, {
     Page.open.call(this, '/about/');
   } },
 
-  assertOnTitleName: {
+  assertUsingGetTitle: {
     value: function() {
       var title = browser.getTitle();
       assert.equal(title, 'About – Chris Kenst');
     }
   },
 
-  assertOnTitleTag: {
+  assertUsingGetTagName: {
     value: function() {
       var title = browser.getTagName('.entry-title');
       assert.equal(title, 'h1');
+    }
+  },
+
+  assertUsingGetAttribute: {
+    value: function() {
+      var attr = browser.getAttribute('=About', 'href');
+      assert.equal(attr, 'https://www.kenst.com/about/');
     }
   }
 
