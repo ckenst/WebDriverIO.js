@@ -4,11 +4,11 @@ Examples of [webdriver.io](http://webdriver.io/) in action!
 
 ## Installation
 
-1. [Install webdriver.io](http://webdriver.io/guide/getstarted/install.html) using `npm install webdriverio`
+1. [Install webdriver.io](http://webdriver.io/guide/getstarted/install.html) using `npm install`
     - Requires you have [node.js installed](https://nodejs.org/en/download/)
-2. Install the docker image for [Standalone Chrome](https://github.com/SeleniumHQ/docker-selenium). Seems to work by default?
-3. Install Chai `npm install chai`
-
+2. Download and start [Standalone Chrome for Docker](https://github.com/SeleniumHQ/docker-selenium):
+    - Download: `docker pull selenium/standalone-chrome`
+    - Start: `docker run -d -p 4444:4444 -v /dev/shm:/dev/shm selenium/standalone-chrome`
 
 ## Running
 
