@@ -2,9 +2,7 @@ var Page            = require('./base');
 var assert          = require('assert');
 
 var kenstAboutPage = Object.create(Page, {
-  // define elements
 
-  // define or overwrite page methods
   open: { value: function() {
     Page.open.call(this, '/about/');
   } },
@@ -28,7 +26,15 @@ var kenstAboutPage = Object.create(Page, {
       var attr = browser.getAttribute('=About', 'href');
       assert.equal(attr, 'https://www.kenst.com/about/');
     }
-  }
+  },
+
+  waitUntilBlockQuote: {
+    value: function() {
+      browser.waitUntil(function() {
+        return browser.getText('blockquote') === 'Only Testers and Hackers enter data into a program just to see if it works.'
+      });
+    }
+  },
 
 });
 

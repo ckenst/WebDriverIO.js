@@ -28,7 +28,7 @@ var kenstHomePage = Object.create(Page, {
   } },
 
   setAndGetCookie: { value: function() {
-    browser.setCookie({name: 'auth', value: 'somerandomhash'});
+    browser.setCookie({name: 'chris', value: 'washerenow'});
 
     let cookies = browser.getCookie();
     console.log('Cookies set are:');
