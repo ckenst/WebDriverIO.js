@@ -1,4 +1,4 @@
-var HomePage = require('../../pageobjects/kenst.com.page');
+var HomePage = require('../../pages/kenst.com.page');
 
 describe('Kenst.com', function() {
     it('lets set a cookie set', function() {
