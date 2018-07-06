@@ -12,6 +12,7 @@ Examples of [webdriver.io](http://webdriver.io/) in action!
 
 ## Running
 
-1. You can run all of the wdio tests in the spec dir by typing `node_modules/.bin/wdio wdio.config.js`
-2. You can run the other dir tests by specifying their "test suite" with `node_modules/.bin/wdio wdio.config.js --suite <nameofsuite>`
-3. You can run the individual standalone tests (/standalone) by typing `node specs/<filename>`
+1. You can run just the tests in the /spec dir with `node_modules/.bin/wdio wdio.config.js`
+2. You can run individual tests `node_modules/.bin/wdio wdio.config.js --spec <location>`
+3. You can run the other dir tests by specifying their "test suite" with `node_modules/.bin/wdio wdio.config.js --suite <nameofsuite>`
+4. You can run the individual standalone tests (/standalone) by typing `node specs/<filename>`
