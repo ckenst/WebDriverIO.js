@@ -1,11 +1,13 @@
-var Page          = require('./base');
-var assert        = require('assert');
+const Page          = require('./base');
+const assert        = require('assert');
 
-var kenstHomePage = Object.create(Page, {
+const kenstHomePage = Object.create(Page, {
 
-  navResources: { get: function() { return $('#menu-item-2138'); } },
-  navAbout:     { get: function() { return $('#menu-item-1234'); } },
-  navNow:       { get: function() { return $('#menu-item-2219'); } },
+  authorBio:    { get: () => $('.author-biography') },
+  heroImage:    { get: () => $('div.avatar') },
+  navResources: { get: () => $('#menu-item-2650') },
+  navAbout:     { get: () => $('#menu-item-1234') },
+  navNow:       { get: () => $('#menu-item-2219') },
 
   // define or overwrite page methods
   open: { value: function() {
