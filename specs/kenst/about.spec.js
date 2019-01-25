@@ -1,5 +1,5 @@
-var AboutPage = require('../../pages/kenst.about.page');
-var HomePage  = require('../../pages/kenst.com.page');
+const AboutPage = require('../../pages/kenst.about.page');
+const HomePage  = require('../../pages/kenst.com.page');
 
 describe('About Kenst.com', function() {
     it('should wait for this blockquote', function() {

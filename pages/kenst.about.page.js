@@ -1,7 +1,7 @@
-var Page            = require('./base');
-var assert          = require('assert');
+const Page            = require('./base');
+const assert          = require('assert');
 
-var kenstAboutPage = Object.create(Page, {
+const kenstAboutPage = Object.create(Page, {
 
   open: { value: function() {
     Page.open.call(this, '/about/');
@@ -10,7 +10,7 @@ var kenstAboutPage = Object.create(Page, {
   assertUsingGetTitle: {
     value: function() {
       var title = browser.getTitle();
-      assert.equal(title, 'About – Chris Kenst');
+      assert.equal(title, 'About - Chris Kenst');
     }
   },
 
