@@ -1,10 +1,10 @@
-var Page   = require('./base');
-var assert = require('assert');
+const Page   = require('./base');
+const assert = require('assert');
 
-var duckPage = Object.create(Page, {
+const duckPage = Object.create(Page, {
 
-  searchForm: { get: function() { return browser.element('#search_form_input_homepage'); } },
-  searchBtn:  { get: function() { return browser.element('#search_button_homepage'); } },
+  searchForm: { get: () => $('#search_form_input_homepage') },
+  searchBtn:  { get: () => $('#search_button_homepage') },
 
   open: { value: function() {
     Page.open.call(this, 'https://duckduckgo.com/');
@@ -13,7 +13,7 @@ var duckPage = Object.create(Page, {
   duckGetTitle: { value: function() {
     var title = browser.getTitle();
     console.log('Title is: ' + title);
-    // outputs: "Title is: WebdriverIO (Software) at DuckDuckGo"
+    // outputs: "Title is: WebdriverIO at DuckDuckGo"
   } },
 
 });

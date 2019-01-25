@@ -1,4 +1,4 @@
-var DuckPage = require('../pages/duckduckgo.page')
+const DuckPage = require('../pages/duckduckgo.page')
 
 describe('DuckDuckGo search', function() {
     it('searches for WebdriverIO', function() {
