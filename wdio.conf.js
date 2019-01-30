@@ -18,18 +18,12 @@ exports.config = {
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
     specs: [
-        './specs/*.js'
+        './specs/*.js',
+        './specs/kenst/*.js'
     ],
 
     suites: {
-      kenst: [
-        './specs/kenst/about.spec.js',
-        './specs/kenst/custom.spec.js',
-        './specs/kenst/setting.cookie.spec.js',
-      ],
-      old: [
-        './specs/old/*.js'
-      ]
+      // 'define suites'
     },
     // Patterns to exclude.
     exclude: [
