@@ -1,9 +1,9 @@
 // Requires webdrivercss and grahpicsmagick to be installed
-
-var assert = require('assert');
+// Does this still work? 
+const assert = require('assert');
 
 // init WebdriverIO
-var client = require('webdriverio').remote({desiredCapabilities:{browserName: 'chrome'}})
+const client = require('webdriverio').remote({desiredCapabilities:{browserName: 'chrome'}})
 // init WebdriverCSS
 require('webdrivercss').init(client);
 

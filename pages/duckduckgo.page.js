@@ -11,7 +11,7 @@ const duckPage = Object.create(Page, {
   } },
 
   duckGetTitle: { value: function() {
-    var title = browser.getTitle();
+    let title = browser.getTitle();
     console.log('Title is: ' + title);
     // outputs: "Title is: WebdriverIO at DuckDuckGo"
   } },

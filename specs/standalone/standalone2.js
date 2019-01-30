@@ -1,7 +1,7 @@
 // You can run this sample by using node. Won't work using wdio
 
-var webdriverio = require('webdriverio');
-var options = {
+const webdriverio = require('webdriverio');
+const options = {
     desiredCapabilities: {
         browserName: 'chrome'
     }

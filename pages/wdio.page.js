@@ -9,7 +9,7 @@ const wdioPage = Object.create(Page, {
 
   wdioGetTitle: { value: function() {
     const title = browser.getTitle();
-    assert.equal(title, 'WebdriverIO - WebDriver bindings for Node.js');
+    assert.equal(title, 'WebdriverIO · Next-gen WebDriver test framework for Node.js');
   } },
 
 });

@@ -26,7 +26,7 @@ const kenstHomePage = Object.create(Page, {
   assertOnUrlAndTitle: { value: function() {
     let result = browser.getUrlAndTitle();
     assert.equal(result.url, 'https://www.kenst.com/');
-    assert.strictEqual(result.title, 'Chris Kenst');
+    assert.strictEqual(result.title, 'Chris Kenst -');
   } },
 
   setAndGetCookie: { value: function() {

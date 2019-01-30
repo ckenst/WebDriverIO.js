@@ -1,10 +1,10 @@
-var Page = require('./base');
+const Page = require('./base');
 
-var LoginPage = Object.create(Page, {
+const LoginPage = Object.create(Page, {
 
   username: { get: function() { return browser.element('#username'); } },
   password: { get: function() { return browser.element('#password'); } },
-  form:     { get: function() { return browser.element('#login'); } },
+  form:     { get: function() { return browser.element('button'); } },
   flash:    { get: function() { return browser.element('#flash'); } },
 
   open: { value: function() {
@@ -12,7 +12,7 @@ var LoginPage = Object.create(Page, {
   } },
 
   submit: { value: function() {
-    this.form.submitForm();
+    this.form.click();
   } }
 });
 
