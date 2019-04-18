@@ -1,6 +1,6 @@
-# webdriver.io
+# WebDriverIO v4
 
-Examples of [webdriver.io](http://webdriver.io/) in action!
+Examples of [webdriver.io](http://webdriver.io/) v4 in action!
 
 ## Installation
 
@@ -21,8 +21,9 @@ Examples of [webdriver.io](http://webdriver.io/) in action!
 
 Our current automated GUI test architecture is:
 
-- MochaJS is our test framework
 - Written in JavaScript
+- Jasmine is our test framework
+- Using Chai for assertions
 - Package manager is NPM
 - WDIO as the test runner
 - WebDriver.io as the driver / library (aka Selenium)
