@@ -1,26 +1,25 @@
 {
   "name": "webdriver-io",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "Examples of [webdriver.io](http://webdriver.io/) in action!",
-  "main": "wdio.conf.js",
+  "main": "conf/wdio.js",
   "dependencies": {
     "chai": "^4.1.2",
+    "cryptiles": ">=4.1.2",
     "jasmine": "^3.1.0",
-    "wdio-jasmine-framework": "^0.3.4",
-    "wdio-browserstack-service": "^0.1.16",
-    "wdio-docker-service": "^1.3.0",
+    "wdio-browserstack-service": "^0.1.19",
     "wdio-dot-reporter": "^0.0.9",
+    "wdio-jasmine-framework": "^0.3.4",
     "wdio-mocha-framework": "^0.5.13",
-    "webdrivercss": "^1.1.10",
     "wdio-spec-reporter": "^0.1.4",
     "wdio-visual-regression-service": "^0.9.0",
-    "webdriverio": "^4.12.0",
-    "cryptiles": ">=4.1.2"
+    "webdrivercss": "^1.1.10",
+    "webdriverio": "^4.12.0"
   },
   "devDependencies": {
-    "lodash": ">=4.17.13",
     "extend": ">=3.0.2",
     "fstream": ">=1.0.12",
+    "lodash": "^4.17.15",
     "tar": ">=2.2.2"
   },
   "scripts": {
