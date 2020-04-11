@@ -6,7 +6,7 @@
   "dependencies": {
     "chai": "^4.1.2",
     "cryptiles": ">=4.1.2",
-    "jasmine": "^3.1.0",
+    "jasmine": "^3.5.0",
     "wdio-browserstack-service": "^0.1.19",
     "wdio-dot-reporter": "^0.0.9",
     "wdio-jasmine-framework": "^0.3.4",
@@ -20,7 +20,8 @@
     "extend": ">=3.0.2",
     "fstream": ">=1.0.12",
     "lodash": "^4.17.15",
-    "tar": ">=2.2.2"
+    "minimist": "^1.2.3",
+    "tar": "^6.0.1"
   },
   "scripts": {
     "test": "./node_modules/.bin/wdio conf/wdio.js"
